@@ -15,9 +15,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_d1x.mk
+    $(LOCAL_DIR)/lineage_d1x.mk \
+    $(LOCAL_DIR)/evolution_d1x.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_d1x-eng \
+    evolution_d1x-userdebug \
+    evolution_d1x-user \
+    evolution_d1x-eng \
+    lineage_d1x-userdebug \
     lineage_d1x-user \
-    lineage_d1x-userdebug
+    lineage_d1x-eng
