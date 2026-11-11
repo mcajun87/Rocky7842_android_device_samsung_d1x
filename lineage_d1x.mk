@@ -55,3 +55,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=d1xks
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
+
+# 中国大陆优化 + 性能调优（详见 cn-optimize.mk 里的注释）
+$(call inherit-product, $(LOCAL_PATH)/cn-optimize.mk)

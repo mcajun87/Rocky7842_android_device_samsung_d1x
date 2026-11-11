@@ -15,3 +15,6 @@ PRODUCT_MODEL := SM-N971N
 PRODUCT_MANUFACTURER := samsung
 
 # 保留 lineage_d1x.mk 里的指纹覆盖，避免与 crDroid/Lineage 的构建指纹冲突
+
+# 中国大陆优化 + 性能调优（详见 cn-optimize.mk 里的注释）
+$(call inherit-product, $(LOCAL_PATH)/cn-optimize.mk)
